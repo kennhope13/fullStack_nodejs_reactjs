@@ -11,7 +11,8 @@ const router = express.Router();
 
 const initWebRoutes = (app) => {
     router.get("/", handleController.handleHeloworld);
-    router.get("/user",handleController.handleUser)
+    router.get("/user",handleController.handleUser);
+    router.get("/db",handleController.handleDB);
     return app.use("/", router)
 }
 export default initWebRoutes;
