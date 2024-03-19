@@ -12,8 +12,10 @@ $(document).ready(function () {
             type: "POST",
             success: function (data) {
                 if (data.result == 1) {
-                    alert("thanh cong")
+                    alert("Thêm người dùng thành công!!!");
                     console.log(data);
+                }else{
+                    alert(data.message);
                 }
             }
         })
